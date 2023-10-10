@@ -1,0 +1,9 @@
+{
+    "ca_cert" : "path/to/ca_certificate.pem",
+    "client_cert" : "path/to/client_certificate.pem",
+    "client_key" : "path/to/client_private_key.pem",
+    "server_host" : "127.0.0.1",
+    "server_port" : 12345,
+    "client_username" : "username",
+    "client_password" : "password"
+}
