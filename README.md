@@ -1,8 +1,13 @@
 # credentials-manager
+Credentials-Manager is a python project as part of my bachelor's thesis in computer science.
+The contents of this file will guide you through the setup process. In the first section, we are going to setup the Credentials Manager Server,
+install SoftHSM, and setup the server's MariaDB database. In the second section, I will guide you throught the Client setup process, including the install
+and configuration process of the Credentials Manager Utils module.
+You can also find this readme two-part inside the credentials_manager directory.
 
 # Credentials-Manager Server
-Credentials-Manager Server is a python project as part of my bachelor's thesis in computer science.
-This project contains all files to run a CM Server, and access it via the CM CLI.
+
+This section will teach you how to run a CM Server, and access it via the CM CLI.
 
 ## Requirements
 The CM server uses a mariaDB database to store and manage client credentials. Make sure you have mariaDB server 15.1 (or greater) installed on your system. Furthermore, the CM server uses a hardware security module which is accessed by the PKCS11 API. This guide will also guide you through the installation and setup process of [SoftHSM](https://www.opendnssec.org/softhsm/), because the original documentation leaves much to be desired.
@@ -254,10 +259,10 @@ CREATE PERMISSION CR_Label Username
 You can create new users and credentials in the same way. Now that we have setup the CM server, we can go ahead and take a look at the client (webapplication) readme "README_Client.md".
 
 
-# Credentials-Manager Utils
+# Credentials-Manager Client & Utils
 
 Credentials-Manager Utils is a Python library for dealing with CM client-server communication.
-This folder contains the raw files of the Credentials-Manager Utils package, which has to be installed in order to
+The directory credentials_manager/credentials_manager contains the raw files of the Credentials-Manager Utils package, which has to be installed in order to
 create a CM client endpoint to connect to a CM server.
 It also contains a already pre-packed tar.gz, which can be used for easy installation.
 This guide will walk you through the setup process of the CM client. All client files are located in credentials_manager/client.
