@@ -1,0 +1,7 @@
+{
+    "ca_cert" : "config/certs/ca_certificate.pem",
+    "server_cert" : "config/certs/server_certificate.pem",
+    "server_key" : "config/certs/server_private_key.pem",
+    "server_host" : "0.0.0.0",
+    "server_port" : 12345
+}

@@ -1,0 +1,6 @@
+{
+    "user" : "credentialsmanager",
+    "password" : "credentialsmanagerpassword",
+    "host" : "127.0.0.1",
+    "database" : "credentials_manager"
+}

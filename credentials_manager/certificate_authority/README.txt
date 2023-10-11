@@ -1,0 +1,2 @@
+This folder contains the CA private key and CA certificate which have been used to sign server and client certificates.
+You don't have to do anything with these files, but theoretically you could use them to sign your own client & server certificates.
