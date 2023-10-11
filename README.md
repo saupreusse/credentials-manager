@@ -1,6 +1,6 @@
 # credentials-manager
 Credentials-Manager is a python project as part of my bachelor's thesis in computer science.
-The contents of this file will guide you through the setup process. In the first section, we are going to setup the Credentials Manager Server,
+The contents of this readme will guide you through the setup process. In the first section, we are going to setup the Credentials Manager Server,
 install SoftHSM, and setup the server's MariaDB database. In the second section, I will guide you throught the Client setup process, including the install
 and configuration process of the Credentials Manager Utils module.
 You can also find this readme two-part inside the credentials_manager directory.
