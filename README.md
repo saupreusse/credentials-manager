@@ -272,9 +272,10 @@ Before you proceed, you should have followed the steps in the "README_Server.md"
 ## Installation
 
 Use the package manager [pip](https://pip.pypa.io/en/stable/) to install CM Utils. The package is located in a seperate folder in credentials_manager/credentials_manager/credentials_manager-1.0.tar.gz.
+If you intend to use this package in a Webserver like Apache, make sure Apache has access to the installed package. A simple way is to just use the super user during installation.
 
 ```bash
-pip install credentials_manager-1.0.tar.gz
+sudo pip install credentials_manager-1.0.tar.gz
 ```
 
 ## Configuration
