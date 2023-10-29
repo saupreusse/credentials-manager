@@ -142,7 +142,7 @@ def testConnection(label, password=None) -> bool:
         connection = mysql.connector.connect(**decryptedCredentials)
 
         # If we've reached here without an exception, the connection was successful.
-        return
+        return True
 
     except Exception as e:
         raise RotationError(f"Connection test failed. {e}")
@@ -237,3 +237,4 @@ class RotationError(Exception):
     """Class for custom error messages."""
 
     pass
+
