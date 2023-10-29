@@ -52,6 +52,12 @@ def cliListCredentials():
 def cliRotateCredentials(label):
     rotator.rotationHandler(label)
 
+def cliTestConnection(label):
+    if rotator.testConnection(label):
+        print("Connection Test successful!")
+    else:
+        print("Connection Test failed!")
+
 
 def cliHelp():
     print(
@@ -70,6 +76,7 @@ def cliHelp():
           >>DELETE CREDENTIALS (CRlabel)
           >>LIST CREDENTIALS ()
           >>ROTATE CREDENTIALS (CRlabel)
+          >>TEST CONNECTION (CRlabel)
           """
     )
 
@@ -86,6 +93,7 @@ COMMANDS = {
     "DELETE CREDENTIALS": cliDeleteCredentials,
     "LIST CREDENTIALS": cliListCredentials,
     "ROTATE CREDENTIALS": cliRotateCredentials,
+    "TEST CONNECTION": cliTestConnection,
     "HELP": cliHelp,
 }
 
