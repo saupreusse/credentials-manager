@@ -358,6 +358,8 @@ conn = mysql.connector.connect(**config)
 
 ## Troubleshooting
 Depending on your apache setup, and how you installed the mysql.connector and credentials-Manager Utils, you might encounter some issues running cm-client.cgi scripts.
+I would strongly suggest you install the CredentialsManager Package using a super user, else Apache might not be able to access the package by default. If you can't install the
+Package as super user, you might have to include the site packages path in your webapplications.
 
 - ModuleNotFoundError:  
 Make sure the package is correctly installed for the interpreter specified in your script's shebang. You can explicitly include side-packages in your cgi scripts and grant other users (including Apache) access like this.
